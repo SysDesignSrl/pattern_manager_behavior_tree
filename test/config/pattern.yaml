@@ -1,0 +1,28 @@
+root:
+  ref_frame: world
+  rotation: [0.0, 0.0, 0.0, 1.0]
+  translation: [0.0, 0.0, 0.0]
+  pallet1:
+    ref_frame: root
+    rotation: [0.0, 0.0, 0.0, 1.0]
+    translation: [0.6, 0.0, 0.0]
+    layer0:
+      ref_frame: pallet1
+      rotation: [0.0, 0.0, 0.0, 1.0]
+      translation: [0.0, 0.0, 0.0]
+      layer0_0:
+        ref_frame: layer0
+        rotation: [0.0, 0.0, 0.0, 1.0]
+        translation: [-0.1, 0.1, 0.0]
+      layer0_1:
+        ref_frame: layer0
+        rotation: [0.0, 0.0, 0.0, 1.0]
+        translation: [-0.1, -0.1, 0.0]
+      layer0_2:
+        ref_frame: layer0
+        rotation: [0.0, 0.0, 0.0, 1.0]
+        translation: [0.1, -0.1, 0.0]
+      layer0_3:
+        ref_frame: layer0
+        rotation: [0.0, 0.0, 0.0, 1.0]
+        translation: [0.1, 0.1, 0.0]

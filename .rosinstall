@@ -1,0 +1,3 @@
+- git:
+    local-name: behaviortree_ros
+    uri: https://github.com/SysDesignSrl/BehaviorTree.ROS.git

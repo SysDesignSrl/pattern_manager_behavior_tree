@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+
+  <name>pattern_manager_behavior_tree</name>
+  <version>0.0.0</version>
+  <description>
+    The pattern_manager_behavior_tree package
+  </description>
+  <license>TODO</license>
+
+  <author email="nicola@sysdesign.it">Nicola Conti</author>
+  <maintainer email="nicola@sysdesign.it">Nicola Conti</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <depend>roscpp</depend>
+  <depend>behaviortree_cpp_v3</depend>
+  <depend>behaviortree_ros</depend>
+  <depend>pattern_manager</depend>
+
+  <test_depend>rostest</test_depend>
+  <test_depend>rosunit</test_depend>
+
+</package>

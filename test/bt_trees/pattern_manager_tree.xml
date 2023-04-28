@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<root main_tree_to_execute="TestTree">
+	<!-- ////////// -->
+	<BehaviorTree ID="TestTree">
+		<Sequence>
+			<GetTransformId service_name="/pattern_manager/get_transform_id" transform_name="root" transform_id="{root_id}"/>
+			<SetActive service_name="/pattern_manager/set_active" transform_id="{root_id}"/>
+			<RetryUntilSuccessful num_attempts="-1">
+				<Inverter>
+					<Trigger name="Iterate" service_name="/pattern_manager/iterate"/>
+				</Inverter>
+			</RetryUntilSuccessful>
+		</Sequence>
+	</BehaviorTree>
+	<!-- ////////// -->
+</root>
