@@ -1,3 +1,6 @@
 - git:
     local-name: behaviortree_ros
     uri: https://github.com/SysDesignSrl/BehaviorTree.ROS.git
+- git:
+    local-name: pattern_manager
+    uri: https://github.com/SysDesignSrl/pattern_manager.git
