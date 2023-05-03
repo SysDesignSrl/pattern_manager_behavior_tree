@@ -12,13 +12,13 @@
 namespace sysdesign { namespace bt {
 
 
-class FilenameServiceNode : public BT::RosServiceNode<pattern_manager::Filename> {
+class Filename : public BT::RosServiceNode<pattern_manager::Filename> {
 private:
-  const std::string LOGNAME = "FilenameServiceNode";
+  const std::string LOGNAME = "Filename";
 
 public:
 
-  FilenameServiceNode(ros::NodeHandle &node, const std::string &name, const BT::NodeConfiguration &config)
+  Filename(ros::NodeHandle &node, const std::string &name, const BT::NodeConfiguration &config)
   : BT::RosServiceNode<pattern_manager::Filename>(node, name, config) { }
 
   static BT::PortsList providedPorts()

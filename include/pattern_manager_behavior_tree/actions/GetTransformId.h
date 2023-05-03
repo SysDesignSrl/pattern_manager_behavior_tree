@@ -12,13 +12,13 @@
 namespace sysdesign { namespace bt {
 
 
-class GetTransformIdServiceNode : public BT::RosServiceNode<pattern_manager::GetTransformId> {
+class GetTransformId : public BT::RosServiceNode<pattern_manager::GetTransformId> {
 private:
-  const std::string LOGNAME = "GetTransformIdServiceNode";
+  const std::string LOGNAME = "GetTransformId";
 
 public:
 
-  GetTransformIdServiceNode(ros::NodeHandle &node, const std::string &name, const BT::NodeConfiguration &config)
+  GetTransformId(ros::NodeHandle &node, const std::string &name, const BT::NodeConfiguration &config)
   : BT::RosServiceNode<pattern_manager::GetTransformId>(node, name, config) { }
 
   static BT::PortsList providedPorts()

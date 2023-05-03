@@ -12,13 +12,13 @@
 namespace sysdesign { namespace bt {
 
 
-class SetActiveServiceNode : public BT::RosServiceNode<pattern_manager::SetActive> {
+class SetActive : public BT::RosServiceNode<pattern_manager::SetActive> {
 private:
-  const std::string LOGNAME = "SetActiveServiceNode";
+  const std::string LOGNAME = "SetActive";
 
 public:
 
-  SetActiveServiceNode(ros::NodeHandle &node, const std::string &name, const BT::NodeConfiguration &config)
+  SetActive(ros::NodeHandle &node, const std::string &name, const BT::NodeConfiguration &config)
   : BT::RosServiceNode<pattern_manager::SetActive>(node, name, config) { }
 
   static BT::PortsList providedPorts()

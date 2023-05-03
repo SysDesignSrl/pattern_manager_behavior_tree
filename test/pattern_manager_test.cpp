@@ -10,11 +10,11 @@
 #include <behaviortree_ros/bt_service_node.h>
 //
 #include "pattern_manager_behavior_tree/conversions.h"
-#include "pattern_manager_behavior_tree/actions/FilenameServiceNode.h"
-#include "pattern_manager_behavior_tree/actions/GetCurrentIdServiceNode.h"
-#include "pattern_manager_behavior_tree/actions/GetTransformIdServiceNode.h"
-#include "pattern_manager_behavior_tree/actions/SetActiveServiceNode.h"
-#include "pattern_manager_behavior_tree/actions/TriggerServiceNode.h"
+#include "pattern_manager_behavior_tree/actions/Filename.h"
+#include "pattern_manager_behavior_tree/actions/GetCurrentId.h"
+#include "pattern_manager_behavior_tree/actions/GetTransformId.h"
+#include "pattern_manager_behavior_tree/actions/SetActive.h"
+#include "pattern_manager_behavior_tree/actions/Trigger.h"
 
 
 class PatternManagerFixture : public ::testing::Test {
@@ -31,11 +31,11 @@ protected:
 
   void SetUp() override
   { 
-    BT::RegisterRosService<sysdesign::bt::FilenameServiceNode>(bt_factory, "Filename", node);
-    BT::RegisterRosService<sysdesign::bt::GetCurrentIdServiceNode>(bt_factory, "GetCurrentId", node);
-    BT::RegisterRosService<sysdesign::bt::GetTransformIdServiceNode>(bt_factory, "GetTransformId", node);
-    BT::RegisterRosService<sysdesign::bt::SetActiveServiceNode>(bt_factory, "SetActive", node);
-    BT::RegisterRosService<sysdesign::bt::TriggerServiceNode>(bt_factory, "Trigger", node);
+    BT::RegisterRosService<sysdesign::bt::Filename>(bt_factory, "Filename", node);
+    BT::RegisterRosService<sysdesign::bt::GetCurrentId>(bt_factory, "GetCurrentId", node);
+    BT::RegisterRosService<sysdesign::bt::GetTransformId>(bt_factory, "GetTransformId", node);
+    BT::RegisterRosService<sysdesign::bt::SetActive>(bt_factory, "SetActive", node);
+    BT::RegisterRosService<sysdesign::bt::Trigger>(bt_factory, "Trigger", node);
   }
 };
 

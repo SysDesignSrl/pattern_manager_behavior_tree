@@ -12,13 +12,13 @@
 namespace sysdesign { namespace bt {
 
 
-class TriggerServiceNode : public BT::RosServiceNode<std_srvs::Trigger> {
+class Trigger : public BT::RosServiceNode<std_srvs::Trigger> {
 private:
-  const std::string LOGNAME = "TriggerServiceNode";
+  const std::string LOGNAME = "Trigger";
 
 public:
 
-  TriggerServiceNode(ros::NodeHandle &node, const std::string &name, const BT::NodeConfiguration &config)
+  Trigger(ros::NodeHandle &node, const std::string &name, const BT::NodeConfiguration &config)
   : BT::RosServiceNode<std_srvs::Trigger>(node, name, config) { }
 
   void sendRequest(std_srvs::Trigger::Request &request) override
