@@ -13,6 +13,8 @@
 #include "pattern_manager_behavior_tree/actions/Filename.h"
 #include "pattern_manager_behavior_tree/actions/GetCurrentId.h"
 #include "pattern_manager_behavior_tree/actions/GetTransformId.h"
+#include "pattern_manager_behavior_tree/actions/GetTransformName.h"
+#include "pattern_manager_behavior_tree/actions/GetTransformParams.h"
 #include "pattern_manager_behavior_tree/actions/SetActive.h"
 #include "pattern_manager_behavior_tree/actions/Trigger.h"
 
@@ -34,6 +36,8 @@ protected:
     BT::RegisterRosService<sysdesign::bt::Filename>(bt_factory, "Filename", node);
     BT::RegisterRosService<sysdesign::bt::GetCurrentId>(bt_factory, "GetCurrentId", node);
     BT::RegisterRosService<sysdesign::bt::GetTransformId>(bt_factory, "GetTransformId", node);
+    BT::RegisterRosService<sysdesign::bt::GetTransformName>(bt_factory, "GetTransformName", node);
+    BT::RegisterRosService<sysdesign::bt::GetTransformParams>(bt_factory, "GetTransformParams", node);
     BT::RegisterRosService<sysdesign::bt::SetActive>(bt_factory, "SetActive", node);
     BT::RegisterRosService<sysdesign::bt::Trigger>(bt_factory, "Trigger", node);
   }

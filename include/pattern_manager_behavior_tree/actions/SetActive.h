@@ -39,7 +39,7 @@ public:
     ROS_DEBUG_STREAM_NAMED(LOGNAME, "request.id: " << request.id);
     
     request.active = getInput<bool>("active").value();
-    ROS_DEBUG_STREAM_NAMED(LOGNAME, "request.active: " << request.active);
+    ROS_DEBUG_NAMED(LOGNAME, "request.active: %s", (request.active) ? "True" : "False");
   }
 
   BT::NodeStatus onResponse(const pattern_manager::SetActive::Response &response) override

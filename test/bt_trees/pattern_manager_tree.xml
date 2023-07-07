@@ -10,6 +10,14 @@
 					<Trigger name="Iterate" service_name="/pattern_manager/iterate"/>
 				</Inverter>
 			</RetryUntilSuccessful>
+
+			<GetTransformName service_name="/pattern_manager/get_transform_name" transform_id="{root_id}" transform_name="{root_name}"/>
+			<GetTransformParams service_name="/pattern_manager/get_transform_info" transform_id="{root_id}"
+				transform_name="{transform_name}" 
+				parent_id="{parent_id}"
+				ref_frame="{ref_frame}"
+				active="{active}"
+			/>
 		</Sequence>
 	</BehaviorTree>
 	<!-- ////////// -->
